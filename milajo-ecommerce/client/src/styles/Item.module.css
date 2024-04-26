@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 350px;
+  border:1px solid #d3d3d3;
+}
+
+.itemDesc
+{
+  height:80px;
+}
+.price {
+  padding: 5px 0px 10px 5px;
+  font-weight: 600 !important;
+}
