@@ -1,0 +1,24 @@
+<!-- HTML -->
+<div id="app">
+  <h1>John & Mila (Pure JS)</h1>
+  <div>
+    <button onclick="addToCart()">Add Polo to cart</button>
+  </div>
+  <br />
+  <ul>
+    <li id="liPoloCount">0 Polos</li>
+    <li id="liPrice">0 AUD</li>
+  </ul>
+</div>
+
+<script>
+  let poloCount = 0;
+  let price = 0;
+  let cart = [];
+  function addToCart() {
+    poloCount++;
+    price += 10;
+    document.getElementById("liPoloCount").textContent = `${poloCount} Polos`;
+    document.getElementById("liPrice").textContent = `${price} AUD`;
+  }
+</script>  
