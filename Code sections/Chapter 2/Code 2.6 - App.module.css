@@ -1,0 +1,10 @@
+.menuLink {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.activeLink {
+  background-color: #FF5733;
+  border-radius: 10%;
+  padding: 10px 10px 10px 10px;
+}
