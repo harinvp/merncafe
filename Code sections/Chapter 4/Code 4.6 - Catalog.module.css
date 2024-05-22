@@ -1,0 +1,13 @@
+
+
+.trolleyIconContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.trolleyIcon {
+  color: #ff5733;
+  font-size: 50px !important;
+}
