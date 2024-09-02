@@ -21,7 +21,7 @@ const authenticate = (req, res, next) => {
   next(); // Proceed if authenticated and authorized
 };
 //Insert Order
-router.post('/add', authenticate, (req, res) => {
+router.post('/add', (req, res) => {
   Order.create(req.body)
     .then(order => res.json({ msg: 'Order added successfully', order }))
     .catch(err => res.status(400).json({ error: `Unable to add this order ${err}` }));
