@@ -19,7 +19,7 @@ const authenticate = (req, res, next) => {
 };
 
 //Insert Order
-router.post("/add", authenticate, (req, res) => {
+router.post("/add",  (req, res) => {
   Order.create(req.body)
     .then((order) => res.json({ msg: "Order added successfully", order }))
     .catch((err) =>
